@@ -1,0 +1,40 @@
+html {
+	background-color: #05f;
+	text-align: center;
+}
+
+
+.case  {
+	background-color: #333;
+	width : 5em;
+	height: 5em;
+	padding: 0em;
+	margin: 0.2em;
+	border : 0.2em solid #58f;
+}
+
+#jeu {
+	width: 17.4em;
+	display: flex;
+	flex-wrap: wrap;
+	border : 1px solid black;
+	margin: auto;
+	margin-top : 2em;
+}
+
+#jeu .joueur1 {
+	background-color: #f00
+}
+
+#jeu .joueur2 {
+	background-color: #0f0
+}
+
+.case:hover {
+	border : 0.2em solid #ff0;
+}
+
+#messages {
+	color: #444;
+	font-family: cursive;
+}
