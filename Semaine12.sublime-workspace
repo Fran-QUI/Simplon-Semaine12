@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"class",
+				"classList"
+			],
+			[
+				"cla",
+				"classList"
+			],
+			[
+				"co",
+				"cocher"
+			],
+			[
+				"joueur",
+				"joueur1\t(tictactoe.css)"
+			],
+			[
+				"au",
+				"auto"
+			],
+			[
+				"styl",
+				"style\tTag"
+			],
+			[
+				"sty",
+				"style\t<style>"
+			],
+			[
 				"text",
 				"text-align"
 			],
@@ -74,10 +102,6 @@
 			[
 				"display",
 				"display"
-			],
-			[
-				"sty",
-				"style\tTag"
 			],
 			[
 				"nom",
@@ -223,16 +247,13 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 283,
+				"buffer_size": 276,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "<!DOCTYPE html>\n<html lang=\"fr\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<title>Autocomplete</title>\n</head>\n<body>\n\n<input id=recherche type=\"text\" autocomplete=\"off\">\n\n<div id=\"results\"></div>\n\n</body>\n</html>",
 			"file": "html/autocomplete.html",
-			"file_size": 130,
-			"file_write_time": 131407098891938593,
 			"settings":
 			{
 				"buffer_size": 203,
@@ -241,10 +262,11 @@
 			}
 		},
 		{
-			"file": "html/tictactoe.html",
+			"file": "tictactoe.html",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 717,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		},
@@ -260,7 +282,30 @@
 			"file": "js/tictactoe.js",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 1407,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{\n  // If true, when in a docblock, pressing tab after a @tag line (like @param, @return)\n  // will indent to the description. This is useful if you are writing a long description\n  // and want that block of text to stay aligned.\n  \"jsdocs_deep_indent\": true,\n\n  // If true, then pressing enter while in a double-slash comment (like this one)\n  // will automatically add two slashes to the next line as well\n  \"jsdocs_extend_double_slash\": true,\n\n  // the number of spaces to add after the leading *\n  \"jsdocs_indentation_spaces\": 1,\n\n  // The number of spaces to add after the leading * in lines under the first line of each\n  // paragraph. This is only used together with automatic line wrapping. For example, a value\n  // of 3 might look like this:\n  //\n  // /**\n  //  * Duis sed arcu non tellus eleifend ullamcorper quis non erat. Curabitur\n  //  *   metus elit, ultrices et tristique a, blandit at justo.\n  //  * @param  {String} foo Lorem ipsum dolor sit amet.\n  //  * @param  {Number} bar Nullam fringilla feugiat pretium. Quisque\n  //  *   consectetur, risus eu pellentesque tincidunt, nulla ipsum imperdiet\n  //  *   massa, sit amet adipiscing dolor.\n  //  * @return {[Type]}\n  //  */\n  \"jsdocs_indentation_spaces_same_para\": 1,\n\n  // whether the words following the @tags should align.\n  // Possible values are 'no', 'shallow', 'deep'\n  // For backwards compatibility, false is equivalent to 'no', true is equivalent to 'shallow'\n  //\n  // 'shallow' will just align the first words after the tag. eg:\n  // @param    {MyCustomClass} myVariable desc1\n  // @return   {String} foo desc2\n  // @property {Number} blahblah desc3\n  //\n  // 'deep' will align each component of the tags, eg:\n  // @param    {MyCustomClass} myVariable desc1\n  // @return   {String}        foo        desc2\n  // @property {Number}        blahblah   desc3\n  \"jsdocs_align_tags\": \"deep\",\n\n  // Any additional boilerplate tags which should be added to each block. Should be an array of strings.\n  // Note that this only applies when a docblock is opened directly preceding a function.\n  // Tab points can be added by using snippet syntax, eg: ${1:default text}\n  \"jsdocs_extra_tags\": [],\n\n  // If extra tags are defined, by default they go between the description and the param/return tags. If this is set to\n  // true, the extra tags are placed at the very end.\n  \"jsdocs_extra_tags_go_after\": false,\n\n  // A map to determine the value of variables, should hungarian notation (or similar) be in use\n  \"jsdocs_notation_map\": [],\n\n  // Since there seems to be no agreed standard for \"@return\" or \"@returns\", use this setting to rename it as you wish.\n  \"jsdocs_return_tag\": \"@return\",\n\n  // Add a '[function_name description]' for the function block\n  \"jsdocs_function_description\": true,\n\n  // Add a '[description]' placeholder for the return tag?\n  \"jsdocs_return_description\": true,\n\n  // Add a '[description]' placeholder for the param tag?\n  \"jsdocs_param_description\": true,\n\n  // Add a name of parameter in param tag?\n  \"jsdocs_param_name\": true,\n\n  // Whether there should be blank lines added between the description line, and between tags of different types.\n  // Possible values are true, false, or \"after_description\".\n  // If true, the output might look like this:\n  //\n  // /**\n  //  * [description]\n  //  *\n  //  * @param  {String} foo\n  //  * @param  {Number} bar\n  //  *\n  //  * @return {[Type]}\n  //  */\n  //\n  // If \"after_description\" is configured, a blank line is only added between the description and the first tag, but not\n  // between different tag sections, so the output, in that case, might look like this:\n  //\n  // /**\n  //  * [description]\n  //  *\n  //  * @param  {String} foo\n  //  * @param  {Number} bar\n  //  * @return {[Type]}\n  //  */\n  \"jsdocs_spacer_between_sections\": false,\n\n  // Whether each section should be indented to the same level, or indent each one individually.\n  // (When true, the @param section will lose the extra space immediately after each '@param').\n  \"jsdocs_per_section_indent\": false,\n\n  // Minimum spaces between cols (default is 1). For example, a value\n  // of 2 might look like this:\n  //\n  // /**\n  //  * Duis sed arcu non tellus eleifend ullamcorper quis non erat. Curabitur\n  //  *\n  //  * @param   {String}  foo  Lorem ipsum dolor sit amet.\n  //  * @param   {Number}  bar  Nullam fringilla feugiat pretium. Quisque\n  //  *\n  //  * @return  {[Type]}       description\n  //  */\n  \"jsdocs_min_spaces_between_columns\": 1,\n\n  // indicates whether the @method tag should be added automatically\n  \"jsdocs_autoadd_method_tag\": false,\n\n  // If set to true, DocBlockr won't parse any code, providing no default templates. All other functions work as normal.\n  \"jsdocs_simple_mode\": false,\n\n  // If set to true, primitives such as \"Number\" and \"String\" will be documented as \"number\" and \"string\".\n  \"jsdocs_lower_case_primitives\": false,\n\n  // If set to true, primitives such as \"boolean\" and \"integer\" will be shortened to \"bool\" and \"int\".\n  \"jsdocs_short_primitives\": false,\n\n  // This property affects the default tag added to `var` declarations in Javascript/Coffeescript. If `false`, the\n  // default is used (\"var\"), otherwise it can be set to any String, eg: \"property\"\n  \"jsdocs_override_js_var\": false,\n\n  // If set to true, an extra line break is added after the end of a docblock to separate it from the code.\n  \"jsdocs_newline_after_block\": false,\n\n  // If set to true, Ctrl+Enter while in a single line comment will 'decorate' the comment.\n  \"jsdocs_decorate\": true,\n\n  // If set to true, typing /**<space> will open an inline docblock\n  \"jsdocs_quick_open_inline\": true,\n\n  \"jsdocs_development_mode\": false\n}\n",
+			"file": "/C/Users/fquiv/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/Base File.sublime-settings",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 5661,
+				"line_ending": "Windows",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"file": "css/tictactoe.css",
+			"settings":
+			{
+				"buffer_size": 484,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
 		}
@@ -339,11 +384,14 @@
 	"expanded_folders":
 	[
 		"/C/Users/fquiv/Documents/Cours/Semaine 12/Simplon-Semaine12",
+		"/C/Users/fquiv/Documents/Cours/Semaine 12/Simplon-Semaine12/css",
 		"/C/Users/fquiv/Documents/Cours/Semaine 12/Simplon-Semaine12/html",
 		"/C/Users/fquiv/Documents/Cours/Semaine 12/Simplon-Semaine12/js"
 	],
 	"file_history":
 	[
+		"/C/Users/fquiv/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/README.md",
+		"/C/Users/fquiv/AppData/Roaming/Sublime Text 3/Packages/User/ColorHighlighter.sublime-settings",
 		"/C/Users/fquiv/Documents/Cours/Semaine 12/Simplon-Semaine12/html",
 		"/C/Users/fquiv/Documents/Cours/Semaine 11/Simplon-Semaine11/css/shifumi.css",
 		"/C/Users/fquiv/Documents/Cours/Semaine 11/Simplon-Semaine11/js/shifumi.js",
@@ -378,7 +426,7 @@
 	],
 	"find":
 	{
-		"height": 26.0
+		"height": 132.0
 	},
 	"find_in_files":
 	{
@@ -392,6 +440,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"funtion victoire() {\n\tif ($l1c1.classList == $l1c2.classList && $l1c1.classList == $l1c3.classList) {\n\t\t$messages.innerHTML=\"Victoire\";\n\t};\n};\n",
 			"chxjoueur",
 			"document.getElementById(\"ShiFuMi\").value",
 			"nombre",
@@ -446,15 +495,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 283,
+						"buffer_size": 276,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								173,
-								148
+								260,
+								260
 							]
 						],
 						"settings":
@@ -467,15 +516,15 @@
 								{
 									"1":
 									[
-										173,
-										174
+										257,
+										259
 									]
 								},
 								"icon":
 								{
 									"1":
 									[
-										"Packages/BracketHighlighter/icons/double_quote.png",
+										"Packages/BracketHighlighter/icons/tag.png",
 										"brackethighlighter.default"
 									]
 								},
@@ -483,8 +532,8 @@
 								{
 									"1":
 									[
-										147,
-										148
+										129,
+										131
 									]
 								},
 								"unmatched":
@@ -549,6 +598,7 @@
 								"bh_regex_close",
 								"bh_regex_content"
 							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
 							"git_gutter_is_enabled": true,
 							"open_with_edit": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
@@ -557,7 +607,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -669,47 +719,64 @@
 								"bh_regex_close",
 								"bh_regex_content"
 							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
 							"git_gutter_is_enabled": true,
 							"open_with_edit": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 114.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "html/tictactoe.html",
+					"file": "tictactoe.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 717,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								572,
+								572
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
 								"close":
 								{
+									"1":
+									[
+										568,
+										571
+									]
 								},
 								"icon":
 								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/tag.png",
+										"brackethighlighter.default"
+									]
 								},
 								"open":
 								{
+									"1":
+									[
+										528,
+										531
+									]
 								},
 								"unmatched":
 								{
@@ -773,21 +840,22 @@
 								"bh_regex_close",
 								"bh_regex_content"
 							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
 							"git_gutter_is_enabled": true,
 							"open_with_edit": true,
 							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 45.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -883,6 +951,7 @@
 								"bh_regex_close",
 								"bh_regex_content"
 							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
 							"git_gutter_is_enabled": true,
 							"open_with_edit": true,
 							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
@@ -891,7 +960,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
@@ -900,19 +969,20 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 1407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1403,
+								1403
 							]
 						],
 						"settings":
 						{
+							"auto_complete": false,
 							"bracket_highlighter.busy": false,
 							"bracket_highlighter.locations":
 							{
@@ -987,12 +1057,237 @@
 								"bh_regex_close",
 								"bh_regex_content"
 							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
 							"git_gutter_is_enabled": true,
 							"open_with_edit": true,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+							"syntax": "Packages/Babel/JavaScript (Babel).sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 585.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Users/fquiv/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/Base File.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5661,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5661,
+								5661
+							]
+						],
+						"settings":
+						{
+							"auto_complete": true,
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+								},
+								"icon":
+								{
+								},
+								"open":
+								{
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
+							"syntax": "Packages/zzz A File Icon zzz/aliases/JSON (Sublime).sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1860.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "css/tictactoe.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								481,
+								481
+							]
+						],
+						"settings":
+						{
+							"bracket_highlighter.busy": false,
+							"bracket_highlighter.locations":
+							{
+								"close":
+								{
+									"1":
+									[
+										482,
+										483
+									]
+								},
+								"icon":
+								{
+									"1":
+									[
+										"Packages/BracketHighlighter/icons/curly_bracket.png",
+										"brackethighlighter.default"
+									]
+								},
+								"open":
+								{
+									"1":
+									[
+										443,
+										444
+									]
+								},
+								"unmatched":
+								{
+								}
+							},
+							"bracket_highlighter.regions":
+							[
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_round_content",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_angle_content",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_curly_content",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_default_content",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_c_define_content",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_single_quote_content",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_unmatched_content",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_square_content",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_double_quote_content",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_tag_content",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_regex_content"
+							],
+							"color_scheme": "Packages/User/Color Highlighter/themes/Boxy Tomorrow.tmTheme",
+							"git_gutter_is_enabled": true,
+							"open_with_edit": true,
+							"syntax": "Packages/CSS3/CSS3.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -1085,7 +1380,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
@@ -1093,7 +1388,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 108.0,
+	"side_bar_width": 236.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
