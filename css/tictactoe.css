@@ -1,5 +1,5 @@
 html {
-	background-color: #05f;
+	background-color: #88f;
 	text-align: center;
 }
 
@@ -11,6 +11,7 @@ html {
 	padding: 0em;
 	margin: 0.2em;
 	border : 0.2em solid #58f;
+	border-radius: 0.8em;
 }
 
 #jeu {
@@ -21,6 +22,7 @@ html {
 	border : 1px solid black;
 	margin: auto;
 	margin-top : 2em;
+	border-radius: 0.8em;
 }
 
 #jeu .joueur1 {
@@ -31,14 +33,26 @@ html {
 	background-color: #0f0
 }
 
-.case:hover {
-	border : 0.2em solid #ff0;
+.j1{
+	background-color: #f00;
+}
+
+.j2{
+	background-color: #0f0;
+}
+
+.case:hover{
+	border-color: #FF0;
 }
 
 #messages {
-	color: #444;
+	color: #E50;
 	font-family: cursive;
-	width: 17.4em;
-	height: 17.4em;
-
+	width: 30em;
+	height: 2em;
+	margin: auto;
+	background-color: black;
+	margin-top: 0.5em;
 }
+
+

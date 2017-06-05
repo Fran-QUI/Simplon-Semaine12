@@ -23,10 +23,33 @@ Voici comment j'ai déterminé mes div : ligneX-colonneX
 
  */
 
-var tourJoueur = 1;
+var tourJoueur;
 var $zoneDeJeu = document.getElementById("jeu");
 var $messages = document.getElementById("messages");
+var coupsjoués = 0;
 
+/*Définit le tour du joueur*/
+
+tourJoueur = Math.floor(2*Math.random()+1)
+
+/*Couleur du fond de la couleur du joueur du quel c'est le tour*/
+
+function couleurJoueur(tourJoueur) {
+switch(tourJoueur) {
+	case 1 :
+	$zoneDeJeu.classList.remove("j1", "j2"); //réinisialise la classe
+	$zoneDeJeu.classList.add("j1"); 
+	break;
+	case 2 :
+	$zoneDeJeu.classList.remove("j1", "j2"); //réinisialise la classe
+	$zoneDeJeu.classList.add("j2");
+	break;
+	};
+}
+
+couleurJoueur(tourJoueur);
+
+/*Action au clic*/
 
 $zoneDeJeu.addEventListener('click', function(e) {
 
@@ -36,12 +59,10 @@ $zoneDeJeu.addEventListener('click', function(e) {
 	if (e.target.classList == "case") {
 		switch(tourJoueur) {
 			case 1 :
-			e.target.classList.add("joueur1"); 
-			tourJoueur = 2;
+			e.target.classList.add("joueur1");
 			break;
 			case 2 :
 			e.target.classList.add("joueur2");
-			tourJoueur = 1;
 			break;
 			}
 	} else {
@@ -224,14 +245,45 @@ $zoneDeJeu.addEventListener('click', function(e) {
 //résultat//
 ////////////
 		) {$messages.innerHTML="Victoire, La partie va recommencer...";
-		setTimeout(function(){$messages.innerHTML=""}, 1500);
+		setTimeout(function(){$messages.innerHTML=""; restart(); }, 1500);
 		};
+
+		coupsjoués++;
+
+		if (coupsjoués === 9) {
+			$messages.innerHTML="Match nul ! La partie va recommencer...";
+			setTimeout(function(){$messages.innerHTML=""; restart(); }, 1500);
+		}
+
+/* Changer de joueur */
+
+		switch(tourJoueur) {
+			case 1 :
+			tourJoueur = 2 ;
+			break ;
+			case 2 : 
+			tourJoueur = 1 ;
+			break ;
+		}
+
+couleurJoueur(tourJoueur)
 	
 	});
 
 
+/*Action de réinitialisation, se lance au moment du résultat d'un test réussis*/
 
-	
+function restart() {
+	$l1c1.classList.remove("joueur1", "joueur2");
+	$l1c2.classList.remove("joueur1", "joueur2");
+	$l1c3.classList.remove("joueur1", "joueur2");
+	$l2c1.classList.remove("joueur1", "joueur2");
+	$l2c2.classList.remove("joueur1", "joueur2");
+	$l2c3.classList.remove("joueur1", "joueur2");
+	$l3c1.classList.remove("joueur1", "joueur2");
+	$l3c2.classList.remove("joueur1", "joueur2");
+	$l3c3.classList.remove("joueur1", "joueur2");
+};
 
 
 
