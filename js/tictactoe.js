@@ -64,24 +64,29 @@ $zoneDeJeu.addEventListener('click', function(e) {
         2
 		3         */
 
-	$l1c1.classList.contains("joueur1") == $l1c2.classList.contains("joueur1") &&
-	$l1c1.classList.contains("joueur1") == $l1c3.classList.contains("joueur1") ||
+	$l1c1.classList.contains("joueur1") === $l1c2.classList.contains("joueur1") &&
+	$l1c1.classList.contains("joueur1") === $l1c3.classList.contains("joueur1") &&
+	$l1c1.classList.contains("joueur1") === true ||
 		
 /*		  1 2 3
 		1
         2 X X X
 		3         */
 
-	$l2c1.classList.contains("joueur1") == $l2c2.classList.contains("joueur1") &&
-	$l2c1.classList.contains("joueur1") == $l2c3.classList.contains("joueur1") ||
+	$l2c1.classList.contains("joueur1") === $l2c2.classList.contains("joueur1") &&
+	$l2c1.classList.contains("joueur1") === $l2c3.classList.contains("joueur1") &&
+	$l2c1.classList.contains("joueur1") === true ||
+
 
 /*		  1 2 3
 		1
 		2 
 		3 X X X    */
 
-	$l3c1.classList.contains("joueur1") == $l3c2.classList.contains("joueur1") &&
-	$l3c1.classList.contains("joueur1") == $l3c3.classList.contains("joueur1") ||
+	$l3c1.classList.contains("joueur1") === $l3c2.classList.contains("joueur1") &&
+	$l3c1.classList.contains("joueur1") === $l3c3.classList.contains("joueur1") &&
+	$l3c1.classList.contains("joueur1") === true ||
+
 
 //Les Colonnes//
 
@@ -90,24 +95,27 @@ $zoneDeJeu.addEventListener('click', function(e) {
         2 X
 		3 X        */
 
-	$l1c1.classList.contains("joueur1") == $l2c1.classList.contains("joueur1") &&
-	$l1c1.classList.contains("joueur1") == $l3c1.classList.contains("joueur1") ||
+	$l1c1.classList.contains("joueur1") === $l2c1.classList.contains("joueur1") &&
+	$l1c1.classList.contains("joueur1") === $l3c1.classList.contains("joueur1") &&
+	$l1c1.classList.contains("joueur1") === true ||
 		
 /*		  1 2 3
 		1   X
         2   X
 		3   X     */
 
-	$l1c2.classList.contains("joueur1") == $l2c2.classList.contains("joueur1") &&
-	$l1c2.classList.contains("joueur1") == $l3c2.classList.contains("joueur1") ||
+	$l1c2.classList.contains("joueur1") === $l2c2.classList.contains("joueur1") &&
+	$l1c2.classList.contains("joueur1") === $l3c2.classList.contains("joueur1") &&
+	$l1c2.classList.contains("joueur1") === true ||
 
 /*		  1 2 3
 		1     X
 		2     X
 		3     X    */
 
-	$l3c1.classList.contains("joueur1") == $l3c2.classList.contains("joueur1") &&
-	$l3c1.classList.contains("joueur1") == $l3c3.classList.contains("joueur1") ||
+	$l3c1.classList.contains("joueur1") === $l3c2.classList.contains("joueur1") &&
+	$l3c1.classList.contains("joueur1") === $l3c3.classList.contains("joueur1") &&
+	$l3c1.classList.contains("joueur1") === true ||
 
 //Les Diagonales//
 
@@ -116,16 +124,18 @@ $zoneDeJeu.addEventListener('click', function(e) {
         2   X
 		3     X        */
 
-	$l1c1.classList.contains("joueur1") == $l2c2.classList.contains("joueur1") &&
-	$l1c1.classList.contains("joueur1") == $l3c3.classList.contains("joueur1") ||
+	$l1c1.classList.contains("joueur1") === $l2c2.classList.contains("joueur1") &&
+	$l1c1.classList.contains("joueur1") === $l3c3.classList.contains("joueur1") &&
+	$l1c1.classList.contains("joueur1") === true ||
 		
 /*		  1 2 3
 		1     X
         2   X
 		3 X     */
 
-	$l1c3.classList.contains("joueur1") == $l2c2.classList.contains("joueur1") &&
-	$l1c3.classList.contains("joueur1") == $l3c1.classList.contains("joueur1") ||
+	$l1c3.classList.contains("joueur1") === $l2c2.classList.contains("joueur1") &&
+	$l1c3.classList.contains("joueur1") === $l3c1.classList.contains("joueur1") &&
+	$l1c3.classList.contains("joueur1") === true ||
 		
 ////////////
 //joueur 2//
@@ -138,50 +148,55 @@ $zoneDeJeu.addEventListener('click', function(e) {
         2
 		3         */
 
-	$l1c1.classList.contains("joueur2") == $l1c2.classList.contains("joueur2") &&
-	$l1c1.classList.contains("joueur2") == $l1c3.classList.contains("joueur2") ||
+	$l1c1.classList.contains("joueur2") === $l1c2.classList.contains("joueur2") &&
+	$l1c1.classList.contains("joueur2") === $l1c3.classList.contains("joueur2") &&
+	$l1c1.classList.contains("joueur2") === true ||
 		
 /*		  1 2 3
 		1
         2 X X X
 		3         */
 
-	$l2c1.classList.contains("joueur2") == $l2c2.classList.contains("joueur2") &&
-	$l2c1.classList.contains("joueur2") == $l2c3.classList.contains("joueur2") ||
+	$l2c1.classList.contains("joueur2") === $l2c2.classList.contains("joueur2") &&
+	$l2c1.classList.contains("joueur2") === $l2c3.classList.contains("joueur2") &&
+	$l2c1.classList.contains("joueur2") === true ||
 
 /*		  1 2 3
 		1
 		2 
 		3 X X X    */
 
-	$l3c1.classList.contains("joueur2") == $l3c2.classList.contains("joueur2") &&
-	$l3c1.classList.contains("joueur2") == $l3c3.classList.contains("joueur2") ||
+	$l3c1.classList.contains("joueur2") === $l3c2.classList.contains("joueur2") &&
+	$l3c1.classList.contains("joueur2") === $l3c3.classList.contains("joueur2") &&
+	$l3c1.classList.contains("joueur2") === true ||
 
-//Les Colonnes//
+//les colonnes//
 
 /*		  1 2 3
 		1 X 
         2 X
 		3 X        */
 
-	$l1c1.classList.contains("joueur2") == $l2c1.classList.contains("joueur2") &&
-	$l1c1.classList.contains("joueur2") == $l3c1.classList.contains("joueur2") ||
+	$l1c1.classList.contains("joueur2") === $l2c1.classList.contains("joueur2") &&
+	$l1c1.classList.contains("joueur2") === $l3c1.classList.contains("joueur2") &&
+	$l1c1.classList.contains("joueur2") === true ||
 		
 /*		  1 2 3
 		1   X
         2   X
 		3   X     */
 
-	$l1c2.classList.contains("joueur2") == $l2c2.classList.contains("joueur2") &&
-	$l1c2.classList.contains("joueur2") == $l3c2.classList.contains("joueur2") ||
-
+	$l1c2.classList.contains("joueur2") === $l2c2.classList.contains("joueur2") &&
+	$l1c2.classList.contains("joueur2") === $l3c2.classList.contains("joueur2") &&
+	$l1c2.classList.contains("joueur2") === true ||
 /*		  1 2 3
 		1     X
 		2     X
 		3     X    */
 
-	$l3c1.classList.contains("joueur2") == $l3c2.classList.contains("joueur2") &&
-	$l3c1.classList.contains("joueur2") == $l3c3.classList.contains("joueur2") ||
+	$l3c1.classList.contains("joueur2") === $l3c2.classList.contains("joueur2") &&
+	$l3c1.classList.contains("joueur2") === $l3c3.classList.contains("joueur2") &&
+	$l3c1.classList.contains("joueur2") === true ||
 
 //Les Diagonales//
 
@@ -190,24 +205,25 @@ $zoneDeJeu.addEventListener('click', function(e) {
         2   X
 		3     X        */
 
-	$l1c1.classList.contains("joueur2") == $l2c2.classList.contains("joueur2") &&
-	$l1c1.classList.contains("joueur2") == $l3c3.classList.contains("joueur2") ||
+	$l1c1.classList.contains("joueur2") === $l2c2.classList.contains("joueur2") &&
+	$l1c1.classList.contains("joueur2") === $l3c3.classList.contains("joueur2") &&
+	$l1c1.classList.contains("joueur2") === true ||
 		
 /*		  1 2 3
 		1     X
         2   X
 		3 X     */
 
-	$l1c3.classList.contains("joueur2") == $l2c2.classList.contains("joueur2") &&
-	$l1c3.classList.contains("joueur2") == $l3c1.classList.contains("joueur2") 
+	$l1c3.classList.contains("joueur2") === $l2c2.classList.contains("joueur2") &&
+	$l1c3.classList.contains("joueur2") === $l3c1.classList.contains("joueur2") &&
+	$l1c3.classList.contains("joueur2") === true 
 		
 
 
 ////////////
 //résultat//
 ////////////
-		)
-		{$messages.innerHTML="Victoire";
+		) {$messages.innerHTML="Victoire, La partie va recommencer...";
 		setTimeout(function(){$messages.innerHTML=""}, 1500);
 		};
 	
